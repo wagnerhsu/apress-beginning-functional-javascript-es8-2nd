@@ -41,7 +41,10 @@ let apressBooks = [
 ];
 
 //get only title and author fields
-let resultOfTitleName = map(apressBooks, book => ({ title: book.title, author: book.author }));
+let resultOfTitleName = map(apressBooks, (book) => ({
+  title: book.title,
+  author: book.author,
+}));
 
 console.log(resultOfTitleName);
 
